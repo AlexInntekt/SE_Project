@@ -61,7 +61,19 @@ class TeachingHour(models.Model):
         ('Sunday','Sunday')
     ]
 
+    TYPE = [
+        ('Course','Course'),
+        ('Laboratory','Laboratory'),
+        ('Seminary','Seminary'),
+        ('Activity','Activity'),
+    ]
+
     professor = models.ForeignKey(Professor, null=True, on_delete=models.SET_NULL)
     subject   = models.ForeignKey(Subject, null=True, on_delete=models.SET_NULL)
     day       = models.CharField(null=True, max_length=20, choices=DAY, default='Monday')
-    hours      = models.IntegerField(null=True, default=2)
+    time      = models.TimeField(null=True)
+    hours     = models.IntegerField(null=True, default=2)
+    ttype     = models.CharField(null=True, max_length=20, choices=TYPE, default='Course') 
+
+    def __str__(self):
+        return "{} - {} {} {} {}".format(self.subject.name, self.professor.name, self.professor.surname, self.day, self.time)
