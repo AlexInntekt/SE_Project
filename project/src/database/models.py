@@ -46,5 +46,5 @@ class Professor(models.Model):
 			department_name = self.department.name
 		except AttributeError:
 			department_name = "No department assigned"
-			
+
 		return "{} {} ({})".format(self.name, self.surname, department_name)
