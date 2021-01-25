@@ -23,3 +23,37 @@ Run the web server on the desired IP (local or loopback address) and port:
 ### Available endpoints
 
 ### GET
+```
+*/api/v1/languages  
+*/api/v1/subjects  
+*/api/v1/faculties  
+*/api/v1/departments  
+*/api/v1/professors  
+*/api/v1/teaching_hours  
+```
+ 
+Example:  
+`127.0.0.1:8000/api/api/v1/faculties`   
+
+
+### POST 
+```
+*/api/v1/add_language  
+*/api/v1/add_subject  
+*/api/v1/add_facultie  
+*/api/v1/add_department  
+*/api/v1/add_professor  
+*/api/v1/add_teaching_hour  
+```
+
+Example:  
+url:  
+`127.0.0.1:8000/api/api/v1/add_language `   
+  
+body: 
+``` 
+{
+"name": "Romanian",
+"abrv": "RO"
+}
+```
