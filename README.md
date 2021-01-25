@@ -1,9 +1,23 @@
 # SE_Project   
 Repository for the SE project   
    
-## Description    
+
+## Description approach 2
+
+We search different chatbots aplications for websites. We tried ChatComposer https://www.chatcompose.com/website.html but it has many problems and no documentation. After ChatComposer we tried InstaBot https://instabot.io/ . It has less problems than ChatComposer, but again no documentation. After another try we found ChatBot https://www.chatbot.com/ which seems to fit us best.    
+ChatBot is a powerful tool with lots of options and it has a very intuitive way of doing this.     
+We start developing using this tool and the final product looks like this: The bot welcomes you with the message:   
+"Hello, welcome to FILS ChatBot! 👋 How can I help you?" The user can choose from 4 answers: "Course", "How to apply?", "Open days", "Contact us".     
+"How to apply" offers info about registering in the exam fro Bachelor degreee and Master degree.     
+"Course" offers info about the curriculum for Undergraduate and Masters. 
+"Open Days" offers info about Schedule and Location    
+"Contact us" offers info about calling and leaving a message. For Leaving a message the bot will ask for name and email.    
+  
+  
+## Description approach 1   
 Django web server project which provides interface through ORM to a database (can be switched from a SQLlite file to a Postgres db) and a RESTfull API with POST and GET operations.    
   
+
 ### How to install:  
 Go to the implementation_approach1 directory and create a virtual environment:  
 
